@@ -27,6 +27,11 @@ os.environ["ZHIPUAI_API_KEY"] = zhipu_api_key
 def get_AI():
     client = ZhipuAI(api_key=zhipu_api_key) 
 
+    result = client.files.list(
+    purpose="file-extract",    #支持batch、file-extract、fine-tune
+    )   
+    for file in result:
+        client.files.delete(file_id=file.id)
     
     file_01 = client.files.create(file=Path("design/result/llmdata/year_landings_addr.csv"), purpose="file-extract")
     content_01 = json.loads(client.files.content(file_01.id).content)["content"]

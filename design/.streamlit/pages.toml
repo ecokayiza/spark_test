@@ -1,0 +1,29 @@
+[[page]]
+name = "数据集说明和展示"
+script = "home.py"
+section = "数据"
+icon = "📄"
+
+[[page]]
+name = "模式分析"
+script = "pages/mode_analysis.py"
+section = "分析"
+icon = "📊"
+
+[[page]]
+name = "路径聚类"
+script = "pages/path_clustering.py"
+section = "分析"
+icon = "🗺️"
+
+[[page]]
+name = "强度预测"
+script = "pages/intensity_prediction.py"
+section = "预测"
+icon = "🔮"
+
+[[page]]
+name = "风险评估"
+script = "pages/risk_assessment.py"
+section = "评估"
+icon = "⚠️"

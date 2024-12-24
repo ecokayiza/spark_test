@@ -23,14 +23,17 @@ template = """
 zhipu_api_key="6328b91e5a03d4284108b0f6065f936e.qa0IS6bGvUmeRp8f"
 os.environ["ZHIPUAI_API_KEY"] = zhipu_api_key
 
+@st.cache_data
+def get_AI():
+    client = ZhipuAI(api_key=zhipu_api_key) 
 
-client = ZhipuAI(api_key=zhipu_api_key) 
+    file_01 = client.files.create(file=Path("design/result/llmdata/year_landings_addr.csv"), purpose="file-extract")
+    content_01 = json.loads(client.files.content(file_01.id).content)["content"]
 
-file_01 = client.files.create(file=Path("design/result/llmdata/year_landings_addr.csv"), purpose="file-extract")
-content_01 = json.loads(client.files.content(file_01.id).content)["content"]
-
-file_02 = client.files.create(file=Path("design/result/llmdata/year_season_typhoon.csv"), purpose="file-extract")
-content_02 = json.loads(client.files.content(file_02.id).content)["content"]
+    file_02 = client.files.create(file=Path("design/result/llmdata/year_season_typhoon.csv"), purpose="file-extract")
+    content_02 = json.loads(client.files.content(file_02.id).content)["content"]
+    return client,content_01,content_02
+client,content_01,content_02=get_AI()
 
 
 

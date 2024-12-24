@@ -1,7 +1,5 @@
-coverage==7.6.9
+
 folium==0.19.2
-grpc==1.0.0
-grpc_status==1.0.0
 httpx==0.13.3
 ipython==8.12.3
 memory_profiler==0.61.0

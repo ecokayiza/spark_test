@@ -1,7 +1,9 @@
 
-folium==0.19.2
-numpy==2.2.1
-scikit_learn==1.6.0
-scipy==1.14.1
-streamlit==1.41.1
-zhipuai==2.1.5.20241204
+folium
+numpy
+scikit_learn
+scipy
+streamlit
+zhipuai
+matplotlib
+pandas

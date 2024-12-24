@@ -7,3 +7,4 @@ streamlit
 zhipuai
 matplotlib
 pandas
+plotly

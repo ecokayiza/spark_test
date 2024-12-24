@@ -22,7 +22,7 @@ def load_intensity_data():
 df_intensity = load_intensity_data()
 ################################################################################################################
 from folium.plugins import HeatMap
-@st.cache_resource
+
 def generate_typhoon_heatmap(df_track, start_year, end_year):
 # 过滤指定年份范围内的数据
     typhoon_data = df_track[(df_track['year'] >= start_year) & (df_track['year'] <= end_year)]
@@ -34,14 +34,14 @@ def generate_typhoon_heatmap(df_track, start_year, end_year):
     HeatMap(heat_data, radius=5, blur=10).add_to(m)
     
     return m
-@st.cache_resource
+
 def get_map_by_id(storm_id):
     typhoon = df_track[df_track['storm_id'] == storm_id]
     typhoon['latitude'] = typhoon['latitude'].astype(float)
     typhoon['longitude'] = typhoon['longitude'].astype(float)
     typhoon['date'] = pd.to_datetime(typhoon['date'])
     return get_map(typhoon[['latitude', 'longitude']].to_records(index=False), typhoon['date'])
-@st.cache_resource
+
 def get_map(coordinates, dates):
     m = folium.Map() #Folium 地图对象 
     m.fit_bounds(coordinates.tolist()) #调整地图视角

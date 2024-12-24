@@ -1,6 +1,5 @@
 
 folium==0.19.2
-httpx==0.13.3
 numpy==2.2.1
 scikit_learn==1.6.0
 scipy==1.14.1

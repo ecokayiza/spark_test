@@ -3,8 +3,8 @@
 具体请见
 https://sparktest-v8fad5jyo4bsp3at8mputd.streamlit.app/
 
-![demo1](design/assets/demo1.png)
-![demo2](design/assets/demo2.png)
+![demo1](design/assets/demo2.png)
+![demo2](design/assets/demo1.png)
 
 =======
 ###### 数据说明:

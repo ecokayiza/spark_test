@@ -1,7 +1,11 @@
-<<<<<<< HEAD
-nothing special
+### 分布式课程设计
+具体请见
+https://sparktest-v8fad5jyo4bsp3at8mputd.streamlit.app/
+
+
+数据：
 =======
-### data:
+#### data:
 1. International number ID
 类型：整数
 描述：台风的国际编号。前两位数字表示台风发生的年份，后两位是从 1 开始的递增整数索引。如果前导数字为零，则省略。例如，2004 年的第二个台风编号为 402；1960 年的第十个台风编号为 6010。
@@ -63,31 +67,6 @@ nothing special
 17. Indicator of landfall or passage
 类型：字符串
 描述：指示台风是否登陆或经过陆地。可能的值包括空格（' '）和井号（'#'）。井号（'#'）表示台风中心已经到达陆地。首次出现井号是在1991年。
-
-
-### info:
-
-1. International number ID
-类型：整数
-描述：台风的国际编号。前两位数字表示台风发生的年份，后两位是从 1 开始的递增整数索引。如果前导数字为零，则省略。例如，2004 年的第二个台风编号为 402；1960 年的第十个台风编号为 6010。
-
-2. Tropical cyclone number ID
-类型：字符串（可能为空）
-描述：热带气旋编号。
-
-3. Flag of the last data line
-类型：字符串
-描述：最后一条数据的标志，表示台风的状态。可能的值包括：
-Dissipation：台风消散
-Going out：台风离开监测区域
-
-4. Difference between the time of the last data and the time of the final analysis
-类型：整数
-描述：最后一条数据的时间与最终分析时间之间的差异，单位为小时。
-
-5. name
-类型：字符串（可能为空）
-描述：台风的名称。
 
 6. Latest Revision
 类型：日期

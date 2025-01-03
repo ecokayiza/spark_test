@@ -3,10 +3,12 @@
 具体请见
 https://sparktest-v8fad5jyo4bsp3at8mputd.streamlit.app/
 
-![demo](design/assets/dataset_cover.png)
+![demo1](design/assets/demo1.png)
+![demo2](design/assets/demo2.png)
 
 =======
 ###### 数据说明:
+```
 1. International number ID
 类型：整数
 描述：台风的国际编号。前两位数字表示台风发生的年份，后两位是从 1 开始的递增整数索引。如果前导数字为零，则省略。例如，2004 年的第二个台风编号为 402；1960 年的第十个台风编号为 6010。
@@ -72,6 +74,6 @@ https://sparktest-v8fad5jyo4bsp3at8mputd.streamlit.app/
 6. Latest Revision
 类型：日期
 描述：数据的最新修订日期。
+```
 
 
->>>>>>> e02108b (1)
